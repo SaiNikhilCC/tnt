@@ -20,7 +20,7 @@ import Refund from "./Pages/Policy/Refund";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer, toast } from "react-toastify";
 import CategoryPage from "./Component/CategoryPage";
-import FOF from "./Pages/f0f";
+import FOF from "./Pages/F0F";
 import EditProfile from "./Pages/EditProfile";
 import PlaceOrderScreen from "./Pages/PlaceOrderScreen";
 import OrderHistory from "./Pages/OrderHistory";
