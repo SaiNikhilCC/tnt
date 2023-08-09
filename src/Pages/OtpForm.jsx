@@ -42,7 +42,7 @@ export const OtpForm = ({ number }) => {
 
     try {
       const { data } = await axios.post(
-        "http://3.111.36.104/user/verify-otp/",
+        "https://3.111.36.104/user/verify-otp/",
         {
           uid: USER_ID,
           otp: otpRef,
