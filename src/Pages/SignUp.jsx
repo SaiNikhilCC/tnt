@@ -44,7 +44,7 @@ export default function SignUp() {
    else if (phone.length==10){
     try {
       const { data } = await axios.post(
-        "http://3.111.36.104/user/register-user/",
+        "https://3.111.36.104/user/register-user/",
         {
           name,
           phone,
