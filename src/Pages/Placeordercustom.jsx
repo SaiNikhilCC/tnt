@@ -116,7 +116,7 @@ const Placeordercustom = () => {
 
   const deleteAddress = async (id) => {
     await axios
-      .delete(`http://3.111.36.104/user/remove-address/`, {
+      .delete(`https://3.111.36.104/user/remove-address/`, {
         headers: {
           Authorization: `bearer ${userInfo.access} `,
           // Add any other required headers here
