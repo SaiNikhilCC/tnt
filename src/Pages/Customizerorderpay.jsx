@@ -22,7 +22,7 @@ const Customizerorderpay = () => {
     const getparticularAddress = () => {
         axios
           .post(
-            `http://3.111.36.104/user/particular-address-details/`,
+            `https://3.111.36.104/user/particular-address-details/`,
             {
               address_id: id,
             },
@@ -53,7 +53,7 @@ const Customizerorderpay = () => {
           handler: function (response) {
             axios
               .post(
-                `http://3.111.36.104/user/place-new-order-customizer/`,
+                `https://3.111.36.104/user/place-new-order-customizer/`,
                 {
                   user: uid,
                   address: id,
