@@ -37,7 +37,7 @@ const OrderHistory = () => {
       dispatch({ type: "FETCH_REQUEST" });
       try {
         const { data } = await axios.post(
-          `http://3.111.36.104/user/particular-user-orders-history/`,
+          `https://3.111.36.104/user/particular-user-orders-history/`,
           {
             user: uid,
           },
