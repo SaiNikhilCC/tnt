@@ -7,7 +7,7 @@ import { useContext, useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import { OtpForm } from "./OtpForm";
 import {Col,Row} from "react-bootstrap"
-import "../Styles/Signin.css";
+import "../Styles/signin.css";
 import '../Styles/Hero.css';
 import video from './../assets/images/Neon-flash_4.mp4';
 
