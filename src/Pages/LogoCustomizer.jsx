@@ -15,7 +15,7 @@ const LogoCustomizer = () => {
 
   const uid = userInfo &&  userInfo.data[0].uid;
 const navigate= useNavigate()
-  const api = "http://3.111.36.104";
+  const api = "https://3.111.36.104";
   useEffect(() => {
     axios
       .get(`${api}/user/all-templates/`)
@@ -43,7 +43,7 @@ const navigate= useNavigate()
     formData.append("text", text);
     formData.append("email", email);
     axios
-      .post("http://3.111.36.104/user/place-order-logo-template/", formData, {
+      .post("https://3.111.36.104/user/place-order-logo-template/", formData, {
         headers: {
           " Authorization": `bearer ${userInfo.access} `,
         },
