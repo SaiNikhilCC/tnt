@@ -27,7 +27,7 @@ import { useNavigate } from "react-router-dom";
 import { Usercontext } from "./Usecontext/Context";
 
 const Customizer = () => {
-  const url = "http://3.111.36.104";
+  const url = "https://3.111.36.104";
   const [selectedFont, setSelectedFont] = useState("");
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
