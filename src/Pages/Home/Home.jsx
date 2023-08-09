@@ -45,7 +45,7 @@ const Home = () => {
 
   const navigate = useNavigate()
 
-  const Url = "http://3.111.36.104"
+  const Url = "https://3.111.36.104"
 
   const [product, setProduct] = useState([]);
 
@@ -66,7 +66,7 @@ const Home = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('http://3.111.36.104/sadmin/all-banner/');
+      const response = await axios.get('https://3.111.36.104/sadmin/all-banner/');
       setBanners(response.data.data);
                                                       } catch (error) {
       console.error('Error fetching data:', error);
