@@ -8,7 +8,7 @@ import { toast } from "react-toastify";
 import { getError } from "../utils";
 import { Col, Row } from "react-bootstrap";
 import { OtpForm } from "./OtpForm";
-import "../Styles/Signin.css";
+import "../Styles/signin.css";
 
 const Signin = () => {
   
