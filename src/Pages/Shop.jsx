@@ -40,7 +40,7 @@ const Shop = () => {
       dispatch({ type: "FETCH_REQUEST" });
       try {
         const result = await axios.get(
-          "http://3.111.36.104/user/get-all-products/?page=1"
+          "https://3.111.36.104/user/get-all-products/?page=1"
         );
 
         dispatch({ type: "FETCH_SUCCESS", payload: result.data.results });
