@@ -108,7 +108,7 @@ const ProductScreen = () => {
     }
     try {
       const { data } = await axios.post(
-        `https://3.111.36.104/user/post-review/`,
+        `https://apis.theneontribe.com/user/post-review/`,
         {
           user: userInfo.data[0].uid,
           product: id,
@@ -162,7 +162,7 @@ const ProductScreen = () => {
       dispatchr({ type: "FETCH_REQUEST" });
       try {
         const result = await axios.post(
-          `https://3.111.36.104/user/particular-product-details/`,
+          `https://apis.theneontribe.com/user/particular-product-details/`,
           {
             product_id: id,
           }
@@ -178,7 +178,7 @@ const ProductScreen = () => {
       setLoadingReview(true);
       try {
         const resultReview = await axios.get(
-          `https://3.111.36.104/user/particular-product-reviews/${id}/`
+          `https://apis.theneontribe.com/user/particular-product-reviews/${id}/`
         );
         setReview(resultReview.data.data);
         setLoadingReview(false);
@@ -241,7 +241,7 @@ var COLOR =product[0] &&  product[0].product_images[0]
         <Row>
           <Col md={12} sm={12} lg={6}>
             <img
-              src={"https://3.111.36.104" + image}
+              src={"https://apis.theneontribe.com" + image}
               width="100%"
               alt={product[0].product_title}
               style={{ borderRadius: "20px" }}
@@ -273,7 +273,7 @@ var COLOR =product[0] &&  product[0].product_images[0]
                   return (
                     <SwiperSlide>
                       <img
-                        src={"https://3.111.36.104" + item.image}
+                        src={"https://apis.theneontribe.com" + item.image}
                         className="small-img"
                         onClick={() => sendData(item)}
                         onLoad={() => setimage(COLOR && COLOR.image)}

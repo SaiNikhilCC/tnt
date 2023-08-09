@@ -47,7 +47,7 @@ const CategoryPage = () => {
       dispatch({ type: "FETCH_REQUEST" });
       try {
         const result = await axios.get(
-          "http://3.111.36.104/sadmin/all-products/"
+          "https://apis.theneontribe.com/sadmin/all-products/"
         );
 
         
@@ -64,7 +64,7 @@ const CategoryPage = () => {
   const getCategory = () => {
     axios
       .get(
-        `http://3.111.36.104/user/particular-category-sub-category-list/${id}`
+        `https://apis.theneontribe.com/user/particular-category-sub-category-list/${id}`
       )
       .then((res) => {
 
@@ -76,7 +76,7 @@ const CategoryPage = () => {
 
   const cat = () => {
     axios
-      .get(`http://3.111.36.104/user/category-details/${id}/`)
+      .get(`https://apis.theneontribe.com/user/category-details/${id}/`)
       .then((res) => {
 
 
@@ -87,7 +87,7 @@ const CategoryPage = () => {
 
   const allcat = () => {
     axios
-      .get(`http://3.111.36.104/user/all-category/?page=1`)
+      .get(`https://apis.theneontribe.com/user/all-category/?page=1`)
       .then((res) => {
         console.log(res,"all cat done")
         setAllcat(res.data.results);

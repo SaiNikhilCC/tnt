@@ -239,7 +239,7 @@ const Navbar = () => {
                                   className="text-center mx-auto mb-4"
                                 >
                                   <img
-                                    src={"http://3.111.36.104" + user.profile}
+                                    src={"https://apis.theneontribe.com" + user.profile}
                                     alt="profile"
                                   />
                                 </div>
@@ -346,7 +346,7 @@ const Navbar = () => {
                         >
                           <li className="search-list-item">
                             <img
-                              src={"http://3.111.36.104" + data.thumbnail}
+                              src={"https://apis.theneontribe.com" + data.thumbnail}
                               alt="thumb"
                               style={{ width: "30px" }}
                             />

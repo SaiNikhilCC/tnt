@@ -27,7 +27,7 @@ import { useNavigate } from "react-router-dom";
 import { Usercontext } from "./Usecontext/Context";
 
 const Customizer = () => {
-  const url = "https://3.111.36.104";
+  const url = "https://apis.theneontribe.com";
   const [selectedFont, setSelectedFont] = useState("");
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);

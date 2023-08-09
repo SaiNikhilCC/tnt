@@ -32,7 +32,7 @@ const WishlistItems = ({ item, removeHandler }) => {
             <img
               style={{ width: "5rem" }}
               className="img-fluid rounded img-thumbnail"
-              src={"http://3.111.36.104" + item.product.thumbnail}
+              src={"https://apis.theneontribe.com" + item.product.thumbnail}
               alt={item.product_title}
             />
           </div>

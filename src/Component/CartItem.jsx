@@ -27,7 +27,7 @@ const CartItem = ({ item, qtyChangeHandler, removeHandler }) => {
           <img
             style={{ width: "6vw" }}
             className="img-fluid rounded "
-            src={"http://3.111.36.104" + item.product.thumbnail}
+            src={"https://apis.theneontribe.com" + item.product.thumbnail}
             alt={item.product_title}
           />{" "}
         </Col>

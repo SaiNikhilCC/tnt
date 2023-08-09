@@ -75,7 +75,7 @@ const EditAddress = () => {
 
     axios
       .post(
-        `https://3.111.36.104/user/edit-address/`,
+        `https://apis.theneontribe.com/user/edit-address/`,
         {
           address_id: id,
           full_name: values.full_name,

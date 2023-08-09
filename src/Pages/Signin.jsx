@@ -36,7 +36,7 @@ const Signin = () => {
       } else if (number.length < 10) {
         toast.error("Enter valid 10 digits phone number");
       } else {
-        let url = "https://3.111.36.104/user/login/";
+        let url = "https://apis.theneontribe.com/user/login/";
 
         let options = {
           method: "POST",

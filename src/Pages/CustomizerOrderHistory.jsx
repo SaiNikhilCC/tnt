@@ -15,7 +15,7 @@ const navigate=useNavigate();
   const fetchData = async () => {
     try {
       const data = await axios.post(
-        `https://3.111.36.104/user/particular-user-all-order-for-customizer/`,
+        `https://apis.theneontribe.com/user/particular-user-all-order-for-customizer/`,
         {
           user_id: uid,
         },

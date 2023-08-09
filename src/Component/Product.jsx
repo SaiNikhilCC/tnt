@@ -63,7 +63,7 @@ const Product = (props) => {
       dispatchr({ type: "FETCH_REQUEST" });
       try {
         const { data } = await axios.post(
-          `http://3.111.36.104/user/get-users-wishlist/`,
+          `https://apis.theneontribe.com/user/get-users-wishlist/`,
           {
             user_id: userInfo.data[0].uid,
           }
@@ -106,7 +106,7 @@ const Product = (props) => {
             <img
               className="card-img-top shop-collection-cards-card-image-top"
               style={{ width: "100%", height: "250px", borderRadius: "18px" }}
-              src={"http://3.111.36.104"+ product.thumbnail}
+              src={"https://apis.theneontribe.com"+ product.thumbnail}
               alt={product.thumbnail}
             />
           </Link>

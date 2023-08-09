@@ -21,7 +21,7 @@ const OrderSummary = () => {
     const fetchData = async () => {
       try {
         const { data } = await axios.post(
-          `https://3.111.36.104/user/order-details/`,
+          `https://apis.theneontribe.com/user/order-details/`,
           {
             order_id: id,
           },
@@ -294,7 +294,7 @@ axios.post(
                                   style={{ width: "100px" }}
                                   className="img-fluid rounded img-thumbnail"
                                   src={
-                                    "https://3.111.36.104" +
+                                    "https://apis.theneontribe.com" +
                                     item.product.thumbnail
                                   }
                                   alt={item.product_title}

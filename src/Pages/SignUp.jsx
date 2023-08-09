@@ -44,7 +44,7 @@ export default function SignUp() {
    else if (phone.length==10){
     try {
       const { data } = await axios.post(
-        "https://3.111.36.104/user/register-user/",
+        "https://apis.theneontribe.com/user/register-user/",
         {
           name,
           phone,

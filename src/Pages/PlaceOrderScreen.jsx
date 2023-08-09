@@ -42,7 +42,7 @@ const PlaceOrderScreen = () => {
   const getparticularAddress = () => {
     axios
       .post(
-        `https://3.111.36.104/user/particular-address-details/`,
+        `https://apis.theneontribe.com/user/particular-address-details/`,
         {
           address_id: id,
         },
@@ -64,7 +64,7 @@ const PlaceOrderScreen = () => {
   }, []);
 
   const getCoupon = () => {
-    axios.get("https://3.111.36.104/user/get-coupons/").then((res) => {
+    axios.get("https://apis.theneontribe.com/user/get-coupons/").then((res) => {
       setCoupon(res.data.data);
     });
   };
@@ -87,7 +87,7 @@ const PlaceOrderScreen = () => {
       handler: function (response) {
         axios
           .post(
-            `https://3.111.36.104/user/create-order/`,
+            `https://apis.theneontribe.com/user/create-order/`,
             {
               user: uid,
               address: id,
@@ -112,7 +112,7 @@ const PlaceOrderScreen = () => {
               cartItems.map((i) => {
                 axios
                   .post(
-                    "https://3.111.36.104/user/add-order-items/",
+                    "https://apis.theneontribe.com/user/add-order-items/",
                     {
                       order: res.data.data.id,
                       quantity: i.quantity,
@@ -130,7 +130,7 @@ const PlaceOrderScreen = () => {
                     if (res.status == 200) {
                       axios
                         .post(
-                          "https://3.111.36.104/user/empty-users-cart/",
+                          "https://apis.theneontribe.com/user/empty-users-cart/",
                           {
                             user: uid,
                           },
@@ -257,7 +257,7 @@ const PlaceOrderScreen = () => {
                           <img
                             style={{ width: "100px" }}
                             className="img-fluid rounded img-thumbnail"
-                            src={"https://3.111.36.104" + item.product.thumbnail}
+                            src={"https://apis.theneontribe.com" + item.product.thumbnail}
                             alt={item.product_title}
                           ></img>{" "}
                         </Col>

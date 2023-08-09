@@ -31,7 +31,7 @@ const Wishlistpayment = () => {
     const getparticularAddress = () => {
         axios
           .post(
-            `http://3.111.36.104/user/particular-address-details/`,
+            `https://apis.theneontribe.com/user/particular-address-details/`,
             {
               address_id: id,
             },
@@ -62,7 +62,7 @@ const Wishlistpayment = () => {
           handler: function (response) {
             axios
               .post(
-                `http://3.111.36.104/user/create-order/`,
+                `https://apis.theneontribe.com/user/create-order/`,
                 {
                   user: uid,
                   address: id,
@@ -86,7 +86,7 @@ const Wishlistpayment = () => {
 
                axios
                .post(
-                 "http://3.111.36.104/user/add-order-items/",
+                 "https://apis.theneontribe.com/user/add-order-items/",
                  {
                    order:res.data.data.id,
                    quantity:1,
@@ -132,7 +132,7 @@ const Wishlistpayment = () => {
         pay.open();
       };
       const getCoupon = () => {
-        axios.get("http://3.111.36.104/user/get-coupons/").then((res) => {
+        axios.get("https://apis.theneontribe.com/user/get-coupons/").then((res) => {
           setCoupon(res.data.data);
         });
       };
@@ -191,7 +191,7 @@ getCoupon()
                           <img
                             style={{ width: "100px",border: "5px solid black"}}
                             className="img-fluid rounded img-thumbnail"
-                            src={wishlistitem && "http://3.111.36.104"+wishlistitem.thumbnail}
+                            src={wishlistitem && "https://apis.theneontribe.com"+wishlistitem.thumbnail}
                             // alt={item.product_title}
                           />
                         </Col>

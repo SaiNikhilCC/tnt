@@ -22,7 +22,7 @@ const Customizerorderpay = () => {
     const getparticularAddress = () => {
         axios
           .post(
-            `https://3.111.36.104/user/particular-address-details/`,
+            `https://apis.theneontribe.com/user/particular-address-details/`,
             {
               address_id: id,
             },
@@ -53,7 +53,7 @@ const Customizerorderpay = () => {
           handler: function (response) {
             axios
               .post(
-                `https://3.111.36.104/user/place-new-order-customizer/`,
+                `https://apis.theneontribe.com/user/place-new-order-customizer/`,
                 {
                   user: uid,
                   address: id,
