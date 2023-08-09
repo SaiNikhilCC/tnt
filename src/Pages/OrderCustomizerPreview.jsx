@@ -35,7 +35,7 @@ const OrderCustomizerPreview = () => {
     const fetchData = async () => {
       try {
         const { data } = await axios.post(
-          `http://3.111.36.104/user/particular-order-details-for-customizer/`,
+          `https://3.111.36.104/user/particular-order-details-for-customizer/`,
 
           {
             order_id: id,
@@ -387,7 +387,7 @@ const OrderCustomizerPreview = () => {
                           <img
                             style={{ width: "100px" }}
                             className="img-fluid rounded img-thumbnail"
-                            src={"http://3.111.36.104" + orderitem.image}
+                            src={"https://3.111.36.104" + orderitem.image}
                           ></img>{" "}
                         </Col>
 
