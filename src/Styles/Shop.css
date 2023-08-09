@@ -1,0 +1,98 @@
+.shop-collection-cards .card {
+  background-color: #151515;
+  border-radius: 20px;
+}
+.shop-collection-cards-card-image-top {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.collection-cards-card-content.card-title,
+.collection-cards-card-content.card-text {
+  font-family: Exo;
+}
+.shop-collection-card-btn {
+  border-radius: 20px;
+  border: solid 1px transparent;
+  background-image: linear-gradient(
+    60deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
+  box-shadow: 2px 1000px 1px #151515 inset;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  font-size: 18px;
+  color: white;
+}
+.why-tribe-content-rows {
+  position: relative;
+  top: -40px;
+}
+.Neon-Tribe h1 {
+  font-size: 40px;
+}
+.Neon-Tribe {
+  margin-top: 100px;
+}
+.neon-tribe-img img {
+  width: 100%;
+}
+
+.why-neon-tribe-person-img img {
+  width: 30%;
+  margin-top: -158px;
+}
+.why-tnt-icon-boxes {
+  background: #444444;
+  border-radius: 30px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.why-us h5 {
+  font-family: Exo;
+  font-size: 20px;
+}
+.why-us p {
+  font-family: Exo;
+  font-size: 25px;
+  font-weight: 600;
+}
+.pl-4 {
+  padding-left: 1.5rem;
+}
+.react-multiple-carousel__arrow--right {
+  right: -10px !important;
+}
+.commonninja-ribbon {
+  opacity: 0 !important;
+}
+.react-multi-carousel-list {
+  padding: 2rem;
+}
+
+/* code for before after effect */
+
+.homescreen {
+  max-width: 1300px;
+  margin: 1rem auto;
+}
+
+.homescreen_title {
+  font-size: 1.5rem;
+  color: #171717;
+  margin-bottom: 1rem;
+  margin-left: 8px;
+}
+
+.homescreen_products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}

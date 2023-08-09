@@ -1,0 +1,220 @@
+.logo img {
+  width: 200px;
+}
+/* Navbar css */
+.navbar-menu {
+  font-family: Nekst-black;
+}
+.active {
+  color: white !important;
+  border-bottom: 1px solid red;
+}
+/* Navbar css */
+
+/* Hero section */
+.glow-up-text h1 {
+  background-image: url("https://toucansol-dev.com/Neon/wp-content/uploads/2023/03/Vector-Smart-Object1.png");
+  background-repeat: repeat;
+
+  background-size: 400px 100px;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 70px;
+  font-family: chakrapetch-semibold;
+}
+.cls-btn {
+  display: none;
+  right: 20px;
+
+  position: fixed;
+  top: 20px;
+  font-size: 2.5rem;
+}
+
+.glow-up-text p {
+  font-family: Exo;
+}
+
+.best-selling-text {
+  font-family: Exo;
+}
+a {
+  text-decoration: none !important;
+}
+.glow-up-text {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.glow-up-section {
+  margin-top: 50px;
+}
+.nav-list {
+  display: flex;
+  gap: 1rem;
+}
+.nav-menu ul {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+.menu-right-icons ul {
+  list-style-type: none;
+}
+.list-item-link {
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+  position: relative;
+}
+.list-item-link::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -20;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  color: red;
+  background-color: red;
+  transition: all 0.6s ease;
+}
+a:hover {
+  color: white !important;
+}
+
+.list-item-link:hover::after {
+  width: 100%;
+  color: white !important;
+  transition: all 0.6s ease;
+}
+.search-input {
+  outline: none;
+  border-bottom: 2px solid white !important;
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: transparent;
+  color: white;
+  border: none;
+  width: 100%;
+}
+.search-btn {
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+.burger-menu {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: 600;
+}
+#circle-avatar {
+  display: grid;
+
+  place-items: center;
+}
+#circle-avatar img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+#circle-avatar span {
+  font-size: 48px;
+  font-weight: bold;
+}
+.css-ywx1yy {
+  width: 100% !important;
+}
+
+/* code for profile */
+.card1 {
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  border-radius: 20px;
+  transition: all 0.3s;
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
+  transform: scale(0.99);
+  border-radius: 20px;
+  position: fixed;
+  top: 90px;
+  right: 30px;
+}
+
+.card2 {
+  background-color: #1a1a1a;
+  transition: all 0.2s;
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
+  transform: scale(0.99);
+  border-radius: 20px;
+}
+.search-result {
+  margin: 1rem;
+  list-style: none !important;
+}
+.search-list-link {
+  color: white;
+  font-size: 1rem;
+}
+.search-list-item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.search-list-item:hover {
+  background-color: rgb(56 56 56 / 70%);
+  color: white !important;
+}
+.close-modal-btn {
+  width: 3rem;
+  height: 3rem;
+
+  color: white;
+  background: #3a3a3ab0;
+  border: none;
+  font-size: 1.8rem;
+  border-radius: 50%;
+  position: fixed;
+  right: 35px;
+  top: -3rem;
+}
+#header {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  background-color: rgb(21, 21, 21);
+  width: 100%;
+}
+
+.css-79ws1d-MuiModal-root {
+  background-color: black !important;
+}
+ li{
+    position: relative;
+ }
+.nav-dropdown {
+  background: black;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.8s ease;
+  margin-top: .1rem;
+  left: 0;
+  display: none;
+  width:300px;
+  padding:2rem;
+  border-radius:10px;
+}
+.nav-dropdown li{
+    list-style-type: disc;
+
+}
+ul li:hover > ul,
+.nav-dropdown:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  transition: all 0.8s ease;
+
+}

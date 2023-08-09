@@ -1,0 +1,25 @@
+.team-item .team-img img,
+.blog-item .blog-img img  {
+    transition: .5s;
+}
+
+.team-item:hover .team-img img,
+.blog-item:hover .blog-img img {
+    transform: scale(1.15);
+}
+.blog-item{
+  background-color:#151515;
+}
+.blog-title{
+  position:relative
+}
+.blog-title::after{
+  content:" ";
+  display:block;
+  bottom:0;
+  left:0;
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);;
+  height:3px;
+  width:150px;
+
+}

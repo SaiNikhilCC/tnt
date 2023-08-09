@@ -1,0 +1,36 @@
+.glow-up-text h1{
+    background-image: url("./../assets/images/Vector-Smart-Object1.png");
+	background-repeat:repeat;
+		
+	background-size: 400px 100px;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 70px;
+  font-family:chakrapetch-semibold ;
+}
+.glow-up-text p{
+    font-family: Exo;
+}
+
+.best-selling-text  {
+    font-family: Exo;
+}
+.glow-up-text {
+margin-top: auto !important;
+margin-bottom: auto;
+}
+.glow-up-section {
+    margin-top: 4rem ;
+}
+
+
+.accordion-item{background-color:#151515 !important;
+    color: #FFFF !important;
+    border: none !important;
+}
+.accordion {
+    background-color:#151515 !important;
+}
+

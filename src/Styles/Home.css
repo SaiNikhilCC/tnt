@@ -1,0 +1,13 @@
+.react-multi-carousel-list {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.react-multi-carousel-list{
+    padding:0px;
+}
+.react-multi-carousel-item {
+    justify-content: center;
+    display: flex;
+}

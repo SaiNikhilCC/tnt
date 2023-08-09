@@ -1,0 +1,22 @@
+.information p{
+     text-align: justify;
+    }
+    
+    .footer-heading{
+     color:rgb(89, 122, 125)
+    }
+
+    .accordion-button {
+     color: white !important;
+     background-color: #2a2a2a94 !important;
+     padding:1.7rem !important;
+   }
+   
+   .accordion-item {
+     color: white !important;
+     background-color: #2a2a2a94 !important;
+   }
+   
+   .accordion-body {
+     padding: 2rem !important;
+   }
