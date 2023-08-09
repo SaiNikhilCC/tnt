@@ -16,7 +16,7 @@ export default function EditProfile() {
 
   function userdata() {
     axios
-      .post("http://3.111.36.104/user/user-profile/", {
+      .post("https://3.111.36.104/user/user-profile/", {
         uid,
       })
       .then((res) => {
@@ -64,7 +64,7 @@ export default function EditProfile() {
       formData.append("profile", profile.profile);
     }
     axios
-      .put(`http://3.111.36.104/user/edit-user-profile/`, formData)
+      .put(`https://3.111.36.104/user/edit-user-profile/`, formData)
       .then((res) => {
   
         if (res.data.status == 200) {
