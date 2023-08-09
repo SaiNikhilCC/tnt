@@ -1,6 +1,6 @@
 import React from "react";
 import Accordion from "react-bootstrap/Accordion";
-import "../../Styles/policy.css"
+import "../../Styles/Policy.css"
 
 const Faq = () => {
   return (
